@@ -49,12 +49,11 @@ public class FibonacciService {
 
 
     public boolean checkIfFibon (List<Integer> input){
-        boolean check = true;
         for (int i = 2; i < input.size(); i++) {
             if (input.get(i-2)+input.get(i-1) != input.get(i))
                 return false;
         }
-        return check;
+        return true;
     }
 
     public List<Fibonacci> findAll() {
